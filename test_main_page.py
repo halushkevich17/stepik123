@@ -1,4 +1,3 @@
-import time
 import pytest
 from .pages.main_page import MainPage
 from .pages.base_page import BasePage
@@ -32,6 +31,7 @@ def test_guest_cant_see_product_in_basket_opened_from_main_page(browser):
     page = BasketPage(browser, link)
     page.check_that_busket_empty()
     page.check_that_busket_does_not_have_books()
+
 
 
 
